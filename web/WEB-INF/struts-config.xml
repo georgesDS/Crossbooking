@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+          "http://jakarta.apache.org/struts/dtds/struts-config_1_3.dtd">
+
+
+<struts-config>
+    <form-beans>
+        <form-bean name="Form_Emprunt" type="forms.Form_Emprunt"/>
+        <form-bean name="Form_Consulter_Livre" type="forms.Form_Consulter_Livre"/>
+        <form-bean name="Form_Creer_Boite" type="forms.Form_Creer_Boite"/>
+        <form-bean name="FormLogin" type="forms.FormLogin"/>
+        <form-bean name="Form_Creer_Lecteur" type="forms.Form_Creer_Lecteur"/>
+        <form-bean name="Form_Consulter_Boite" type="forms.Form_Consulter_Boite"/>
+        <form-bean name="Form_CreerLivre" type="forms.Form_CreerLivre"/>
+    </form-beans>
+    
+    <global-exceptions>
+    
+    </global-exceptions>
+
+    <global-forwards>
+
+    </global-forwards>
+
+    <action-mappings>
+        <action path="/listelivres" type="actions.Action_ListerLivres">
+            <forward name="listelivres_ok" path="/listelivres.jsp"/>
+        </action>
+        <action input="/login.jsp" name="FormLogin" path="/login" scope="session" type="actions.Action_Login">
+            <forward name="retour_index" path="/index.jsp"/>
+            <forward name="echec_connexion" path="/login.jsp"/>
+        </action>
+        <action path="/logout" type="actions.Action_Logout">
+            <forward name="logout" path="/index.jsp"/>
+        </action>
+        <action path="/carteboites" type="actions.Action_Consulter_Boites">
+            <forward name="listeboites_ok" path="/carteboites.jsp"/>
+        </action>
+        <action input="/creerlecteur.jsp" name="Form_Creer_Lecteur" path="/creerlecteur" scope="request" type="actions.Action_Creer_Lecteur">
+            <forward name="creerlecteur_ok" path="/lecteurcree.jsp"/>
+        </action>
+        <action path="/meslivres" type="actions.Action_MesLivres">
+            <forward name="meslivres_ok" path="/meslivres.jsp"/>
+        </action>
+        <action path="/mesemprunts" type="actions.Action_MesEmprunts">
+            <forward name="mesemprunts_ok" path="/mesemprunts.jsp"/>
+        </action>
+        <action path="/mesboites" type="actions.Action_Consulter_Mes_Boites">
+            <forward name="mesboites_ok" path="/mesboites.jsp"/>
+        </action>
+        <action input="/creerboite.jsp" name="Form_Creer_Boite" path="/creerboite" scope="session" type="actions.Action_Creer_Boite">
+            <forward name="creerboite_ok" path="/mesboites.do"/>
+        </action>
+        <action input="/index.jsp" name="Form_Consulter_Boite" path="/consulterboite" scope="request" type="actions.Action_Consulter_UneBoite">
+            <forward name="consulteruneboite_ok" path="/boiteconsulte.jsp"/>
+        </action>
+        <action path="/creerlivre" type="actions.Action_creerlivre">
+            <forward name="affichageform_ok" path="/creerlivre.jsp"/>
+        </action>
+        <action input="/creerlivre.jsp" name="Form_CreerLivre" path="/livrecree" scope="request" type="actions.Action_livrecree">
+            <forward name="creationlivre_ok" path="/livrecree.jsp"/>
+        </action>
+        <action input="/listelivres.jsp" name="Form_Consulter_Livre" path="/consulterlivre" scope="session" type="actions.Action_Consulter_Un_Livre">
+            <forward name="consulterlivre_ok" path="/livreconsulte.jsp"/>
+        </action>
+        <action input="/livreconsulte.jsp" name="Form_Emprunt" path="/emprunterlivre" scope="session" type="actions.Action_Emprunter_Livre">
+            <forward name="emprunt_ok" path="/mesemprunts.do"/>
+        </action>
+        <action input="/livreconsulte.jsp" name="Form_Consulter_Livre" path="/trajet" scope="session" type="actions.Action_Trajet">
+            <forward name="trajet_ok" path="/trajet.jsp"/>
+        </action>
+    </action-mappings>
+    
+    <controller processorClass="org.apache.struts.tiles.TilesRequestProcessor"/>
+
+    <message-resources parameter="com/myapp/struts/ApplicationResource"/>    
+    
+    <!-- ========================= Tiles plugin ===============================-->
+    <!--
+    This plugin initialize Tiles definition factory. This later can takes some
+    parameters explained here after. The plugin first read parameters from
+    web.xml, thenoverload them with parameters defined here. All parameters
+    are optional.
+    The plugin should be declared in each struts-config file.
+    - definitions-config: (optional)
+    Specify configuration file names. There can be several comma
+    separated file names (default: ?? )
+    - moduleAware: (optional - struts1.1)
+    Specify if the Tiles definition factory is module aware. If true
+    (default), there will be one factory for each Struts module.
+    If false, there will be one common factory for all module. In this
+    later case, it is still needed to declare one plugin per module.
+    The factory will be initialized with parameters found in the first
+    initialized plugin (generally the one associated with the default
+    module).
+    true : One factory per module. (default)
+    false : one single shared factory for all modules
+    - definitions-parser-validate: (optional)
+    Specify if xml parser should validate the Tiles configuration file.
+    true : validate. DTD should be specified in file header (default)
+    false : no validation
+
+    Paths found in Tiles definitions are relative to the main context.
+    -->
+    <plug-in className="org.apache.struts.tiles.TilesPlugin" >
+        <set-property property="definitions-config" value="/WEB-INF/tiles-defs.xml" />      
+        <set-property property="moduleAware" value="true" />
+    </plug-in>
+    
+    <!-- ========================= Validator plugin ================================= -->
+    <plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+        <set-property
+            property="pathnames"
+            value="/WEB-INF/validator-rules.xml,/WEB-INF/validation.xml"/>
+    </plug-in>
+  
+</struts-config>

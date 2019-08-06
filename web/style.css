@@ -1,0 +1,2005 @@
+/*
+INDEX
+*/
+#myaccount-container{
+    border : 1px dashed #0d47a1;
+    border-radius : 15px;
+    height:100%;
+    padding : 15px;
+    box-shadow : 1px 1px 5px 1px lightgrey;
+    
+}
+
+#myaccount-container > div:first-child{
+    text-align:center;
+    padding-bottom : 15px;
+    color: red;
+}
+
+.myaccount{
+    text-shadow: 1px 1px grey;
+    color: #696969;
+}
+
+.spanindexindex{
+	color: red;
+}
+#index-pindex {
+	color: #0d47a1;
+	margin-left: 30px;
+	margin-top: 15px;
+	font-size: 0.9em;
+		width : 880px;
+		text-align: justify;
+}
+
+#index-ensemble{
+margin-top: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin-left: 100px;
+
+}
+
+#index-img >img {
+	height: 350px;
+	margin-bottom: 50px;
+}
+
+
+
+#index-titre {
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+
+margin-top: 30px;
+
+}
+
+#index-actu{
+text-shadow: 1px 1px grey;
+margin-bottom: 10px;
+font-size: 1.3em;
+color: #696969;
+
+
+}
+#index-livre{
+	text-shadow: 1px 1px grey;
+margin-bottom: 10px;
+font-size: 1.3em;
+color: #696969;
+}
+#index-bal{
+	text-shadow: 1px 1px grey;
+color: #696969;
+font-size: 1.3em;
+}
+
+#index-bal1{
+	text-shadow: 1px 1px grey;
+color: #696969;
+font-size: 1.3em;
+}
+
+
+
+/*
+LOGIN
+*/
+
+#logingnrl{
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+
+
+}
+
+#login-titre{
+	color: #0d47a1;
+	margin-top: 30px;
+	margin: 35px;
+	font-size: 2em;
+
+}
+
+#login-nom{
+	color: #0d47a1;
+width: 600px;
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+margin-bottom: 15px;
+}
+#login-user{
+
+	margin-right:76px;
+}
+
+#login-ajoutuser{
+width: 300px;
+background-color: #DCDCDC;
+}
+
+#login-mdp{
+	color: #0d47a1;
+width: 600px;
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+margin-bottom: 15px;
+}
+#login-mdp2{
+	margin-right:100px;
+}
+#login-ajoutmdp{
+	width: 300px;
+	background-color: #DCDCDC;
+
+
+}
+
+#login-connecter{
+	background-color: #C0C0C0;
+	width: 180px;
+	height: 35px;
+	font-style: italic;
+
+	margin-top: 35px;
+	margin-left: 270px !important; 
+	margin-bottom: 65px;
+
+}
+
+#pas-de-login{
+	color: #0d47a1;
+	font-size: 0.8em;
+	text-decoration: underline;
+	font-style: italic;
+        text-align:center;
+}
+
+
+
+
+/*
+LISTE LIVRES
+*/
+
+
+.list-titles{
+	color : #0d47a1;
+	font-weight : bold;
+	font-size: 1.1em;
+}
+
+#list-search{
+	padding : 25px 0 25px 30px;
+}
+
+#list-search > form{
+	display : inline-block;
+}
+
+#list-search input{
+	border : 1px solid #0d47a1;
+	background-color : rgb(242,242,242);
+}
+
+#list-search input:first-of-type{
+	width : 300px;
+	margin-left : 10px;
+}
+
+#list-search input+input{
+	border-radius : 5px;
+	margin-left : 10px;
+	height : 21px;
+	color : #0d47a1;
+	font-weight : bold;
+}
+
+#list-container {
+	display : flex;
+}
+
+
+#list-filter-container{
+	border-right : 1px dashed #0d47a1;
+	display : flex;
+	flex-direction: column;
+	width : 20%;
+	padding-left : 30px;
+}
+
+.list-subtitles{
+	color : #1565c0;
+}
+
+
+#list-filter-container span:first-of-type{
+	padding-bottom : 25px;
+}
+
+#list-filter-container input{
+	margin : 7px 0 7px 15px;
+}
+
+#list-filter-container label{
+	font-size : 0.9em;
+}
+
+#list-filter-container span:nth-of-type(3){
+	padding-top : 15px;
+}
+
+#list-filter-genre input[type=checkbox]{
+	vertical-align : middle;
+}
+
+#list-filter-note input[type=checkbox]{
+	vertical-align : top;
+}
+
+#list-filter-note img{
+	padding : 0 2px 0 2px;
+}
+
+#list-book-container{
+	display : flex;
+	flex-direction: column;
+	width : 50%;
+}
+
+.list-book-book{
+	display : flex;
+	padding-left :25px;
+	margin-bottom : 20px;
+}
+
+.list-book-book > img{
+    height:80px;
+}
+
+.book-infos{
+	display : flex;
+	flex-direction: column;
+	width: 100%;
+	padding-left : 20px;
+}
+
+.book-infos > span:first-child{
+	font-weight :bold;
+	font-style: italic;
+	font-size: 1.1em;
+}
+.book-infos > span:nth-child(2){
+	font-style: italic;
+	font-size: 0.9em;
+}
+
+
+.book-infos > div {
+	display : flex;
+	width : 100%;
+}
+
+.book-infos > div > span{
+	color : #0d47a1;
+	width : 50%;
+	font-size: 1.1em;
+	padding-top : 5px;
+}
+
+.book-infos > div img{
+	padding : 0 3px 0 3px;
+}
+
+#list-book-nav{
+	display : flex;
+	justify-content : flex-end;
+	padding-top : 10px;
+	padding-right : 10px;
+	margin-bottom : 60px;
+	color : #0d47a1;
+	font-size : 0.8em;
+	font-weight : bold;
+}
+
+#list-book-nav span{
+	padding : 0 2px 0 2px;
+}
+
+#list-right-container{
+	width : 30%;
+}
+
+#list-sort-container{
+	padding-bottom : 30px;
+}
+#list-sort-container span{
+	padding-left : 70px;
+}
+#list-sort-container form{
+	padding-top : 10px;
+	text-align : center;
+	
+}
+
+#list-sort-container form:first-of-type{
+	padding-bottom : 30px;
+}
+
+#list-sort-container select{
+	width : 170px;
+	height : 25px;
+	border : 1px solid #0d47a1;
+	color : #0d47a1;
+	font-size : 0.7em;
+}
+
+#list-ad-container{
+	display : flex;
+	flex-direction: column;
+	padding-top :15px;
+	border-left : 1px dashed #0d47a1;
+	border-top : 1px dashed #0d47a1;
+	text-align: center;
+	color : red;
+	font-style: italic;
+	font-size : 0.7em;
+}
+
+#list-ad-container  > img{
+	width : 120px;
+	margin : 0 auto;
+	padding : 5px 0 25px 0;
+}
+
+
+
+/*
+CREER BOITE
+*/
+
+#box-form-title {
+	margin : 10px 0 10px 10px;
+}
+
+#box-form-title > h1 {
+	color : #0d47a1;
+	font-weight : bold;
+	font-size: 1.4em;
+	padding-bottom : 5px;
+}
+
+#box-form-title > p {
+	color : red;
+	font-size: 0.8em;
+	text-shadow: 1px 1px #ffffff;
+}
+
+#box-form-content > form {
+	margin :0 auto;
+	width : 96%;
+}
+
+#box-form-top {
+	display : flex;
+	flex-direction : row;
+}
+
+#box-form-left {
+	width : 520px;
+	display : flex;
+	flex-direction : column;
+}
+
+::-webkit-input-placeholder {
+	color : #0d47a1;
+	font-style : italic;
+	font-size : 0.8em;
+}
+
+
+#box-input-part1 > input{
+	width : 350px;
+	margin-left : 20px;
+	background-color : lightgrey;
+	border : 1px solid grey;
+	padding-left : 5px;
+	color : #0d47a1;
+}
+
+#input-title-name{
+	color : #0d47a1;
+	padding-bottom : 5px;
+}
+
+#box-input-part2{
+	display : flex;
+	flex-direction : row;
+	margin-top : 10px;
+}
+
+.input-title {
+	color : #0d47a1;
+	padding-bottom : 10px;
+	display : block;
+}
+
+#loc {
+	/*margin-top : 15px;*/
+}
+
+.input-title > img{
+	width : 25px;
+	vertical-align : middle;
+}
+
+
+.oblig {
+	color :red;
+	font-style : italic;
+	font-size : 0.8em;
+	font-weight : bold;
+}
+
+#oblig {
+	margin-left : 20px;
+	margin-top : 10px;
+	display : inline-block;
+}
+
+#box-input > input{
+	display : block;
+	width : 200px;
+	margin-bottom : 9px;
+	background-color : lightgrey;
+	border : 1px solid grey;
+	padding-left : 5px;
+	color : #0d47a1;
+}
+
+#box-input > select{
+	display : block;
+	width : 206px;
+	margin-bottom : 10px;
+	background-color : lightgrey;
+	border : 1px solid grey;
+	padding-left : 5px;
+	color : #0d47a1;
+	font-style : italic;
+	font-size : 0.8em;
+}
+
+
+#box-input > input:last-child{
+	width : 150px;
+	margin-left : 25px;
+	margin-top : 28px;
+}
+
+
+
+#box-form-image {
+	display: flex;
+	flex-direction : column;
+	align-items : center;
+}
+
+#box-form-image > input{
+	padding : 5px 12px 5px 12px;
+	font-style : italic;
+	font-weight : bold;
+	font-size : 0.7em;
+	background-color: lightgrey;
+	border : 1px solid grey;
+}
+
+#box-form-image > img{
+	margin-top : 10px;
+	border : 1px solid black;
+}
+
+#box-form-content > form > input {
+	margin-left : 200px;
+	padding : 5px 50px 5px 50px;
+	font-style : italic;
+	font-weight : bold;
+	font-size : 0.7em;
+	background-color: lightgrey;
+	border : 1px solid grey;
+}
+
+
+
+
+
+/************************************************************************************************************/
+/************************** ******DEBUT CSS CAS CONSULTER UN LIVRE *******************************************/
+/*************************************************************************************************************/
+
+#contour-livre{
+	display : flex;
+	margin : 0 auto;
+	margin-top : 50px;
+	margin-bottom : 50px;
+	width : 750px;
+	height : 400px;
+	border : 10px solid black;
+}
+
+#page-gauche{
+	display : flex;
+	flex-direction: column;
+	margin-left: 8px;
+	border-left: 1px solid black;
+	width: 50%;
+	box-shadow: 10px -1px 25px grey;
+}
+
+#sup-gauche{
+	display : flex;
+}
+
+#img-livre img{
+	height: 200px;
+}
+
+#droite-imglivre{
+	display : flex;
+	flex-direction: column;
+	width: 50%;
+	align-items: center;
+}
+
+#statut-livre{
+	padding-top : 10px;
+}
+
+#num-BAL{
+	padding-top : 10px;
+}
+
+#genre-livre{
+	padding-top : 50px;
+	text-align:center;
+}
+
+#milieu-gauche{
+	margin: 25px auto 25px auto;
+}
+
+#milieu-gauche a{
+	cursor: pointer
+}
+
+#milieu-gauche div {
+	padding : 5px 15px;
+	border-radius: 7px;
+	border: 1px solid rgb(91, 155, 213);
+	background: linear-gradient(rgb(177, 203, 233), rgb(146, 185, 228));
+	font-size : 1.1em;
+}
+
+
+#inf-gauche a {
+	display : flex;
+	height : 25%;
+	justify-content: center;
+	color: #0d47a1;
+	font-weight:bold;
+}
+
+
+#inf-gauche a img {
+	height: 65px;
+}
+
+#droite-img-planete {
+	width: 75px;
+	height: 62px;
+	background-color: rgb(245, 245, 245);
+	box-shadow: 2px 2px 2px grey;
+	padding-left: 5px;
+	padding-top:5px;
+}
+
+#img-livre{
+	margin: 10px 0 0 20px;
+	padding: 0;
+	width : 40%;
+	height: 200px;
+}
+
+#id-livre span {
+	font-style: italic;
+}
+
+#id-livre span:first-of-type {
+	font-weight: bold;
+}
+
+#statut-livre span {
+	font-weight: bold;
+	margin: auto;
+}
+
+#num-BAL span {
+	font-weight: bold;
+}
+
+#num-BAL span:last-of-type {
+	text-indent: 10px;
+}
+
+#droite-imglivre {
+	margin-top: 10px;
+}
+
+#genre-livre p:last-of-type {
+	font-size: 25px;
+	color: #0d47a1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#page-droite >div {
+	padding-top: 10px;
+}
+
+#page-droite{
+	border-right: 1px solid black;
+	display : flex;
+	flex-direction: column;
+	margin-right: 8px;
+	width: 50%;
+	box-shadow: -10px -1px 25px grey;
+}
+
+#page-droite div:first-child {
+	display : flex;
+	margin-left: 50px;
+	margin-bottom : 20px;
+}
+
+#page-droite >div img { /*Les etoiles*/
+	height: 30px;
+	padding-right : 10px;
+}
+
+
+#page-droite > div:first-child > span {
+	margin-left: auto;
+	margin-right: 13px;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 24px;
+        text-align: right;
+}
+
+#page-droite div:nth-of-type(2) {
+	margin-left: auto;
+	margin-right:10px;
+}
+
+#page-droite div:nth-of-type(2) > span {
+	font-style: normal;
+	font-weight: bold;
+}
+
+#page-droite div:nth-of-type(2) span:last-of-type{
+	font-style: italic;
+	font-weight: normal;
+}
+
+#page-droite div:nth-of-type(3){
+	margin-left: auto;
+}
+
+
+#page-droite div:nth-of-type(3) a {
+	margin-right: 10px;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+#page-droite div:nth-of-type(4) {
+	margin-top : 30px;
+	margin-left: auto;
+	margin-right: 10px;
+	width: 77%;
+	height: 100px;
+	background-color: lightgrey;
+	text-align:right;
+}
+
+#page-droite div:nth-of-type(4) span{
+	font-weight: bold;
+	font-size: 0.8em;
+	padding : 0 5px 0 5px;
+}
+
+#page-droite div:nth-of-type(4) p{
+	font-style: italic;
+	font-size: 0.8em;
+	color : grey;
+	padding : 0 5px 0 5px;
+}
+
+#page-droite div:last-of-type button {
+	margin-left: 45%;
+	font-weight: bold;
+	font-size: 0.7em;
+	height: 25px;
+	border: 1px solid rgb(157, 195, 230);
+	background-color: rgb(218, 227, 243);
+	width : 30%;
+	margin-top : 20px;
+	box-shadow: 2px -2px 6px 2px #c0c0c0;
+}
+
+
+
+/*************************************************************************************************************/
+/*********************************** FIN CSS CAS CONSULTER UN LIVRE ******************************************/
+/*************************************************************************************************************/
+
+
+
+/*
+MES BOITES
+*/
+
+
+#main-content > p:first-child{
+	color: #0d47a1;
+	margin: 20px 0 0 30px;
+}
+
+#main-content > p + p{
+	margin: 20px 0 10px 30px;
+}
+
+#my-box-nb {
+	color: rgb(216,64,22);
+	font-weight: bold;
+}
+
+.box-container{
+	width : 400px;
+	margin : 25px 15px 0 15px;
+	display : flex;
+	flex-direction : column;
+	align-items : center;
+	float: left;
+}
+
+.box-top {
+	z-index:2;
+}
+.box-top img{
+	width : 400px;
+}
+
+.box-content{
+	width : 360px;
+	height : 270px;
+	border: 6px solid rgb(65,113,156);
+	box-shadow: 0px 0px 5px 5px #9b9b9b;
+	box-sizing:border-box;
+	margin-top: -20px;
+	z-index:1;
+	position: relative;
+}
+
+.box-top-content{
+	display : flex;
+	padding : 15px 15px 0 15px;
+}
+
+.box-top-content > img{
+	height:170px;
+}
+
+.box-content-infos {
+	padding-left :15px;
+}
+
+.box-infos-number{
+	font-weight : bold;
+}
+.box-infos-number em{
+	font-style : italic;
+}
+.box-infos-date{
+	margin-top : 5px;
+	font-size : 0.8em;
+	color : rgb(64,64,64);
+}
+.box-infos-city{
+	margin-top : 15px;
+	font-size : 0.8em;
+}
+.box-infos-adress{
+	font-size : 0.8em;
+}
+.box-infos-time{
+	margin-top : 15px;
+	color : rgb(64,64,64);
+	font-size : 0.8em;
+	font-weight : bold;
+}
+.box-infos-content{
+	color : rgb(64,64,64);
+	font-size : 0.8em;
+	font-weight : bold;
+}
+.box-infos-stars{
+	margin-top : 10px;
+	text-align:center;
+}
+.box-infos-stars img{
+	margin-right : 5px;
+}
+.box-infos-location{
+	color: #0d47a1;
+}
+.box-infos-nb{
+	font-style : italic;
+	font-weight : normal;
+}
+
+.box-bottom-content {
+	margin : 10px 15px 10px 15px;
+	border : 1px solid rgb(112,173,71);
+	background: linear-gradient(rgb(181,213,167), rgb(156,202,134)); 
+	box-sizing:border-box;
+	height : 30px;
+	line-height : 25px;
+}
+
+.box-bottom-content p {
+	padding-left : 20px;
+	font-size: 0.8em;
+}
+
+.box-bottom-content p > strong {
+	font-weight : bold;
+}
+
+.box-bottom-content p > em {
+	font-style : italic;
+}
+.box-modif {
+	height : 50px;
+}
+.box-modif img{
+	height : 50px;
+}
+
+
+#box-add{
+	text-align: center;
+	background: linear-gradient(rgb(177,203,233), rgb(146,185,228));
+	width : 200px;
+	height : 30px;
+	line-height : 30px;
+	border-radius: 10px;
+	border : 1px solid rgb(91,155,213);
+	position: absolute;
+	top: 42%;
+	left : 22%;
+}
+
+
+/*
+CARTE BOITES
+*/
+
+
+#map-top{
+	display : flex;
+	flex-direction: row;
+	padding-top : 5px;
+	padding-bottom : 15px;
+}
+#map-top-left {
+	width:66%;
+	padding-left : 25px;
+}
+
+#map-top-left p{
+	color: red;
+	font-size : 0.7em;
+	font-style: italic;
+	padding-bottom : 5px;
+}
+#map-search {
+	display : flex;
+	flex-direction: row;
+}
+
+
+#map-search span{
+	color: #0d47a1;
+	font-size : 1.2em;
+	font-weight: bold;
+}
+
+#map-search form {
+	width :66%;
+}
+
+#map-search input[type="text"]{
+	border : 1px solid #0d47a1;
+	margin-left : 10px;
+	width :50%;
+	height: 20px;
+	color: #0d47a1;
+	font-style: italic;
+	padding-left: 7px;
+}
+
+
+#map-top-right{
+	padding-top : 10px;
+	font-size : 0.7em;
+	font-style: italic;
+	color : #0d47a1;
+	text-align: center;
+}
+
+#map-top-right a{
+	text-decoration : underline;
+}
+
+#map{
+	width : 100%;
+	height : 518px;;
+}
+
+/*
+CREER LIVRE
+*/
+#box-form-content_creerlivre{
+	margin : 0 auto;
+	margin-top : 50px;
+	margin-bottom : 50px;
+	width : 750px;
+	height : 400px;
+	border : 3px solid #0d47a1;
+	background-image : url("earth.png");
+	background-size: contain;
+	background-position: 100px;
+	background-repeat: no-repeat;
+	display:flex;
+}
+#principal{
+	display: flex;
+	width: 450px;
+	justify-content: flex-start;
+	flex-direction: column;
+}
+
+h1{
+	color: #0d47a1;
+	font-size: 1.8em;
+	margin-left: 18px;
+	margin-bottom: 0.1em;
+}
+#description{
+	color: red;
+	margin-left: 18px;
+	margin-bottom:  0.5em;
+	width: 450px;
+	font-size: 0.8em;
+}
+
+h2{
+color: #0d47a1;
+
+}
+.asterisque{
+margin-right: 20px;
+	color: red;
+	margin-left: 1px;
+}
+
+#champ{
+	color: red;
+	margin-left: 40px;
+	font-style: italic;
+	font-size: 0.7em;
+
+}
+
+#auteur{
+	display: inline;
+	margin-right: 5px;
+	margin-left: 30px;
+}
+
+
+#titre{
+	display: inline;
+	margin-right: 5px;
+	margin-left: 30px;
+
+}
+
+#genre{
+
+	margin-right: 5px;
+	margin-left: 30px;
+}
+
+#boite{
+
+	margin-right: 5px;
+	margin-left: 30px;
+}
+
+#ajouttitre{
+	width: 200px;
+	margin-left: auto;
+		color: #0d47a1;
+		font-style: italic;
+		background-color: #DCDCDC;
+}
+#ajoutauteur{
+	width: 200px;
+	margin-left: auto;
+		color: #0d47a1;
+			background-color: #DCDCDC;
+			font-style: italic;
+}
+#ajoutgenre{
+	width: 204px;
+	margin-left: auto;
+	color: #0d47a1;
+		background-color: #DCDCDC;
+		font-style: italic;
+}
+
+
+
+#ajoutboite{
+	width: 204px;
+	margin-left: auto;
+		color: #0d47a1;
+			background-color: #DCDCDC;
+		font-style: italic;
+
+	}
+
+#auteurboite{
+
+		width: 200px;
+	margin-right: 5px;
+	margin-left: 30px;
+}
+
+
+
+.blocsaisie{
+	display: flex;
+	justify-content: flex-start;
+}
+#bloctitre{
+margin-top: 30px;
+display: flex;
+margin-left: 1px;
+	margin-bottom: 8px;
+	justify-content: flex-start;
+	width: 400px;
+
+}
+
+#blocauteur{
+	display: flex;
+	margin-left: 1px;
+		margin-bottom: 10px;
+		justify-content: flex-start;
+		width: 400px;
+}
+#blocgenre{
+	display: flex;
+	margin-left: 1px;
+		margin-bottom: 10px;
+		justify-content: flex-start;
+		width: 400px;
+}
+#blocboite{
+	display: flex;
+	margin-left: 1px;
+		margin-bottom: 10px;
+		margin-top: 35px;
+		justify-content: flex-start;
+		width: 400px;
+}
+
+#bas{
+	display: flex;
+	width : 400px;
+	margin-left:250px;
+	align-items: center;
+	height: 100px;
+}
+
+#ajouter{
+
+width: 150px;
+font-style: italic;
+height: 25px;
+background-color: #C0C0C0;
+
+}
+
+
+#droite{
+	display: flex;
+	width: 250px;
+margin-top: 80px;
+	margin-left: 20px;
+flex-direction: column;
+	align-items: center;
+}
+#droite button{
+font-style: italic;
+width: 150px;
+height: 25px;
+background-color: #C0C0C0;
+}
+#droite img{
+margin-top:10px;
+border:1px solid black;
+}
+
+#creerlivreimagertour{
+    margin-top: 20px;
+    max-width:  150px;
+    max-height: 150px; 
+}
+#bienvenue3 {
+    margin: 0 auto;
+    text-align: center;
+    margin-top : 100px; 
+}
+
+#retourtitreajoutlivre {
+    font-size : 1.2em;
+    font-weight: bold;
+    font-style : italic;
+    color: red;
+}
+
+/*
+MES EMPRUNTS
+*/
+
+#introlivre1{
+	color : #0d47a1;
+	width: 500px;
+	font-size: 0.9em;
+	margin-left: 30px;
+	margin-top: 30px;
+	margin-bottom: 25px;
+
+}
+#introlivre2{
+font-size: 0.9em;
+
+	margin-left: 30px;
+	margin-bottom: 30px;
+	font-style: italic;
+
+	margin-right: 60px;
+}
+#introlivre2 span{
+	font-size: 1.4em;
+	color: red;
+	font-weight: bold;
+}
+
+.meslivredispo{
+margin-left: 20px;
+margin-right: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+		border-top: 1px dashed #0d47a1;
+		padding-top: 10px;
+		border-bottom:  1px dashed #0d47a1;
+	padding-bottom:  10px;
+
+
+}
+.croixrouge{
+	font-size: 2em;
+	color: red;
+	font-weight: bold;
+	margin-right: 10px;
+}
+.imgidlivredispo{
+	display: flex;
+	flex-direction: column;
+
+}
+.imgidlivredispo span{
+    text-align:center;
+font-style: italic;
+font-size: 0.8em;
+margin-top: 3px;
+
+}
+.imgidlivredispo img{
+	height: 70px;
+	width: 45px;
+        max-height: 70px;
+	max-width: 45px;
+	margin-left: 6px;
+}
+.meslivredispo >img{
+	height: 80px;
+	width: 80px;
+	border: 1px solid  black;
+}
+.taglivredispo{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 200px;
+
+
+}
+.titrelivredispo{
+	font-weight: bold;
+	font-style: italic;
+	margin-bottom: 3px;
+	font-size: 1.1em;
+}
+.auteurlivredispo{
+	margin-bottom: 3px;
+	font-style: italic;
+
+}
+.genrelivredispo{
+	font-size: 1.3em;
+	color : #0d47a1;
+}
+.etatlivredispo{
+	display: flex;
+	flex-direction: column;
+	border: 1px solid  #0d47a1;
+	background-color: rgb(231, 230, 230);
+	height: 80px;
+	width: 310px;
+        padding : 3px;
+        box-sizing: border-box;
+}
+.aspectlivre{
+	font-size: 0.8em;
+	font-weight: bold;
+	margin-left: 3px;
+}
+.desclivre{
+	font-size: 0.8em;
+	font-weight: bold;
+	font-style: italic;
+	color: grey;
+		margin-left: 3px;
+}
+
+.boitelivredispo{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+        width: 130px;
+}
+.dispodispo{
+font-weight: bold;
+margin-bottom: 1px;
+}
+.villeboitedispo{
+margin-top: 1px;
+	color: green;
+	font-size: 0.7em;
+
+}
+.dptboitedispo{
+	color: green;
+	font-size: 0.7em;
+}
+.meslivreemprunt{
+	margin-left: 20px;
+	margin-right: 60px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+			padding-top: 10px;
+			border-bottom:  1px dashed #0d47a1;
+		padding-bottom:  10px;
+}
+.imgidlivreemprunt{
+	display: flex;
+	flex-direction: column;
+	margin-left: 44px;
+}
+.imgidlivreemprunt img{
+	height: 70px;
+	width: 45px;
+        max-height: 70px;
+	max-width: 45px;
+	margin-left: 6px;
+
+}
+.imgidlivreemprunt span{
+	font-style: italic;
+	font-size: 0.8em;
+	margin-top: 3px;
+        text-align : center;
+}
+.taglivreemprunt{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+        width:200px;
+
+}
+.titrelivreemprunt{
+	font-weight: bold;
+	font-style: italic;
+	margin-bottom: 3px;
+	font-size: 1.1em;
+}
+.auteurlivreemprunt{
+	margin-bottom: 3px;
+	font-style: italic;
+}
+.genrelivreemprunt{
+	font-size: 1.3em;
+	color : #0d47a1;
+}
+.meslivreemprunt >img{
+	height: 80px;
+	width: 80px;
+	border: 1px solid  black;
+}
+.etatlivreemprunt{
+	display: flex;
+	flex-direction: column;
+	border: 1px solid  #0d47a1;
+	background-color: rgb(231, 230, 230);
+	height: 80px;
+	width: 310px;
+}
+.boitelivreemprunt{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+        width: 130px;
+}
+.dispoemprunt{
+	font-weight: bold;
+	margin-bottom: 1px;
+	color: #0d47a1;
+}
+#nomlecteuremprunt{
+    text-decoration : underline;
+    font-style: italic;
+}
+
+
+.nomlecteuremprunt{
+    font-weight: bold;
+    font-size: 1.4em;
+    margin-left: 2px;
+    text-decoration: underline;
+    display: inline;
+}
+
+.ajouternouveaulivre{
+    width: 160px;
+    margin-top: 40px;
+    border: 1px solid rgb(91, 155, 213);
+    border-radius: 7px;
+    margin-left: 345px;
+    background: linear-gradient(rgb(177, 203, 233), rgb(146, 185, 228));
+    padding : 5px 15px;
+    font-size: 1.1em;
+    margin-bottom:50px;
+}
+
+
+	
+	
+	
+	
+
+
+
+
+
+
+/*
+MES LIVRES
+*/
+
+
+#E_introlivre1{
+	color : #0d47a1;
+	width: 500px;
+	font-size: 0.9em;
+	margin-left: 30px;
+	margin-top: 30px;
+	margin-bottom: 15px;
+
+}
+#E_introlivre2{
+	color : red;
+	width: 500px;
+	font-size: 0.9em;
+	margin-left: 30px;
+
+	margin-bottom: 15px;
+
+}
+#E_introlivre2 span{
+	font-size: 1.4em;
+	color: red;
+	font-weight: bold;
+}
+
+
+#E_introlivre3{
+font-size: 0.9em;
+
+	margin-left: 30px;
+	margin-bottom: 30px;
+	font-style: italic;
+
+	margin-right: 60px;
+}
+#E_introlivre3 span{
+	font-size: 1.4em;
+	color: red;
+	font-weight: bold;
+}
+
+.E_meslivresemp{
+margin-left: 20px;
+margin-right: 60px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+border-top: 1px dashed #0d47a1;
+padding-top: 10px;
+border-bottom:  1px dashed #0d47a1;
+padding-bottom:  10px;
+
+
+}
+
+.E_meslivresemp:last-of-type{
+    margin-bottom:50px;
+}
+
+
+
+.E_interrouge{
+	font-size: 2em;
+	color: red;
+	font-weight: bold;
+	margin-right: 10px;
+}
+.E_imgidlivreemp{
+	display: flex;
+	flex-direction: column;
+	margin-right: 10px;
+
+}
+.E_imgidlivreemp span{
+font-style: italic;
+font-size: 0.8em;
+margin-top: 3px;
+text-align:center;
+
+}
+.E_imgidlivreemp img{
+	height: 70px;
+	width: 45px;
+	margin-left: 6px;
+}
+.E_meslivresemp >img{
+	height: 80px;
+	width: 70px;
+	border: 1px solid  black;
+}
+.E_taglivreemp{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 200px;
+	margin-right: 10px;
+
+}
+.E_titrelivreemp{
+	font-weight: bold;
+	font-style: italic;
+	margin-bottom: 3px;
+	font-size: 1.1em;
+}
+.E_auteurlivreemp{
+	margin-bottom: 3px;
+	font-style: italic;
+
+}
+.E_genrelivreemp{
+	font-size: 1.3em;
+	color : #0d47a1;
+
+}
+.E_etatlivreemp{
+        padding : 3px;
+        box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+
+	border: 1px solid  #0d47a1;
+	background-color: rgb(231, 230, 230);
+	height: 70px;
+	margin-right: 10px;
+	width: 310px;
+}
+
+.E_Maj{
+margin-top:  10px;
+	width: 120px;
+	margin-left: 100px;
+	border: 1px solid black;
+	border-radius: 5px;
+	background-color: rgb(231, 230, 230);
+}
+
+
+
+.E_aspectlivreemp{
+	font-size: 0.8em;
+	font-weight: bold;
+	margin-left: 3px;
+}
+.E_desclivreemp{
+	font-size: 0.8em;
+	font-weight: bold;
+	font-style: italic;
+	color: grey;
+		margin-left: 3px;
+}
+
+.E_livreemp{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.E_empemp{
+font-weight: bold;
+margin-bottom: 1px;
+color : #0d47a1
+}
+.E_lelelele{
+margin-top: 1px;
+	color: #0d47a1;
+	font-size: 0.7em;
+	display: inline;
+        margin-bottom: 3px;
+
+}
+.E_dateemprunt{
+	color: #0d47a1;
+	font-size: 0.7em;
+}
+
+.E_retournerlivre{
+	width: 100px;
+        border : 1px solid rgb(91,155,213);
+        border-radius: 10px;
+        height : 30px;
+        background: linear-gradient(rgb(177,203,233), rgb(146,185,228));
+}
+
+/*
+S'INSCRIRE
+*/
+#bienvenue2 {
+    margin: 0 auto;
+    text-align: center;
+    margin-top : 150px; 
+}
+
+#identifiants {
+    font-size : 0.8em;
+    font-style : italic;
+}
+
+#identif_connexion {
+    text-decoration : underline;
+    color : #0d47a1;
+    
+}
+
+
+#bandeauCMC  div{
+	display : inline-block;
+	margin-left : 280px;
+	font-size: 1.5em;
+	line-height: 40px;
+	color : #0d47a1;
+}
+#bandeauCMC img{
+	float : right ;
+	clear : both;
+}
+
+#CMC {
+	display : flex;
+	margin-top : 40px;
+}
+#LeftChampsCMC {
+	width : 500px;
+	font-size: 1.2em;
+	margin : 15px;
+	line-height: 35px;
+	list-style-type : none;
+	color : #0d47a1;
+}
+#LeftChampsCMC li:nth-of-type(3) {
+	 margin-bottom: 20px;
+}
+
+#LeftChampsCMC span {
+		color : red;
+		font-style: italic;
+		font-size: 0.8em;
+}
+
+#MiddleChampsCMC {
+	width : 200px;
+	margin : 10px;
+	margin-top: 10px;
+	line-height: 35px;
+	list-style-type : none;
+}
+
+#MiddleChampsCMC input {
+	  background-color: lightgrey;
+
+	  width: 100%;
+		font-style: italic;
+		box-sizing: padding-box;
+		color : #0d47a1;
+}
+
+#MiddleChampsCMC li:nth-of-type(3) {
+	 margin-bottom: 20px;
+}
+
+#MiddleChampsCMC button {
+		margin-top: 50px;
+		font-style: italic;
+		font-size: 0.9em;
+		margin-left: 40px;
+}
+
+#RightChampsCMC{
+	margin : 10px;
+	background-color : #eeeeee;
+	list-style-type : none;
+	width:100%;
+	padding : 5px;
+
+}
+#RightChampsCMC h3 {
+	font-size: 1.1em;
+ color : #0d47a1;
+ margin-bottom: inherit;
+
+}
+
+#RightChampsCMC h3~p:first-of-type{
+	font-size: 0.8em;
+	justify-content: space-between;
+  font-style:italic;
+	text-align: justify;
+	text-indent: 40px;
+}
+
+#RightChampsCMC p:last-of-type{
+		margin-top: 20px;
+		margin-left: 110px;
+		color : #0d47a1;
+		font-weight: bold;
+}
+
+
+
+
+
+/*
+CONSULTEZ BOITE
+*/
+
+
+#maison
+{
+	display:flex;
+	flex-direction:column;
+	height:500px;
+	justify-content:space-around;
+	margin-bottom : 50px;
+}
+
+.toit
+{
+	width:900px;
+
+}
+
+
+#toitboite
+{
+	display:flex;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3px;
+	margin-bottom:0;
+        z-index: 2;
+
+
+}
+#corpsboite
+{
+	display:flex;
+	flex-direction: column;
+	border:10px rgb(65,113,156) solid;
+	width:800px;
+	height:400px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:-38px;
+	justify-content: space-around;
+	padding : 15px 0 25px 0;
+	z-index :1;
+	box-shadow: 0px 0px 5px 5px #9b9b9b;
+}
+#part1
+{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-around;
+	height:200px;
+}
+
+#part2
+{
+	border: 1px solid rgb(112,173,171);
+	margin-top: 10px;
+	margin-left:100px;
+	display:flex;
+	flex-direction: column;
+	height:120px;
+	width:600px;
+}
+
+#imageboite img
+{
+	max-height : 180px;
+        max-width : 160px;
+}
+
+#listelivres
+{
+	padding-left:60px;
+}
+
+#infoboite
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width:600px;
+
+}
+
+#infoboite1
+{
+	display:flex;
+	flex-direction:column;
+	justify-content: space-around;
+	width:400px;
+}
+
+#infoboite2
+{
+	display:flex;
+	flex-direction: column;
+	width:300px;
+	justify-content: space-between;
+}
+
+#titreetnoboite
+{
+	display:flex;
+	flex-direction:row;
+}
+
+#titreetnoboite div {
+	width : 50%;
+}
+
+#locboite
+{
+	display:flex;
+	justify-content: space-around;
+}
+
+#action
+{
+	display:flex;
+	flex-direction:column;
+	justify-content:space-around;
+	height:140px;
+	align-items: center;
+
+}
+
+#action button {
+	font-weight: bold;
+	font-size: 0.7em;
+	height: 25px;
+	border: 1px solid rgb(157, 195, 230);
+	background-color: rgb(218, 227, 243);
+	width : 110px;
+	box-shadow: 2px -2px 6px 2px #c0c0c0;
+}
+
+
+
+/*le fond les couleurs les polices...*/
+
+#titreb
+{
+	font-size:20px;
+	font-weight : bold;
+}
+
+#creationboite
+{
+	font-family: arial;
+	font-size:15px;
+}
+.createur
+{
+	font-style: italic;
+	font-weight:bold;
+}
+#ville
+{
+	font-family: arial;
+	font-size:90px;
+	color: red;
+}
+
+.vil
+{
+	color:blue;
+	font-style: italic;
+}
+.adr
+{
+	color:blue;
+	font-style: italic;
+}
+
+#complboite p {
+	font-weight:bold;
+}
+
+.hor
+{
+	font-style:italic;
+	font-weight:lighter;
+}
+
+.cont
+{
+	font-style:italic;
+	font-weight:lighter;
+}
+
+
+/* pour loc attributs de forme...*/
+#geoloc>p
+{
+	font-family: arial;
+	font-size:12px;
+	color:grey;
+        font-weight: bold;
+        text-align : center;
+
+}
+#dept
+{
+	color: #50bf50;
+	text-align: center;
+        font-size: 1.2em;
+
+
+}
+.numdept
+{
+	font-size: 40px;
+	font-weight:bolder;
+}
+.nomdept
+{
+	font-size: 10px;
+}
+/* forme pour part2*/
+
+#contenuboite
+{
+	background: linear-gradient(rgb(156,232,134),rgb(181,213,167));
+	border-bottom : 1px solid rgb(112,173,171);
+}
+
+#contenuboite p
+{
+	padding : 5px;
+	font-weight : bold;
+}
+
+
+
+.contboite
+{
+	font-style:italic;
+	font-weight : normal;
+}
+#listelivres
+{
+	height: 100%;
+	overflow: scroll;
+}
+.genre
+{
+	color: #0d47a1;
+	font-family:Roboto;
+	font-size:18px;
+}
+.titrelivre
+{
+	font-style:italic;
+	font-weight:bolder;
+}
